@@ -1,93 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kshitij Ramteke | Portfolio</title>
   <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #3498db;
+      --light: #ecf0f1;
+      --dark: #34495e;
+      --text: #2d2d2d;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      background-color: var(--light);
+      color: var(--text);
     }
+
     header {
-      background-color: #333;
+      background-color: var(--primary);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+
     section {
-      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
     }
+
     h2 {
-      color: #333;
+      color: var(--dark);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 5px;
+      margin-bottom: 20px;
     }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
     .project {
-      background: white;
-      margin-bottom: 15px;
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
+      background-color: white;
+      border-left: 4px solid var(--accent);
+      margin-bottom: 20px;
       padding: 15px;
-      background-color: #333;
-      color: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
+
     a {
-      color: #0077cc;
+      color: var(--accent);
       text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .contact-links p {
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
- 
   <header>
     <h1>Kshitij Ramteke</h1>
     <p>QA Engineer | Python Enthusiast | Automation Tester</p>
   </header>
- 
+
   <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I am a dedicated QA Engineer with experience in software testing, network automation, and scripting in Python. I love building reliable and efficient systems.</p>
+    <h2>👨‍💻 About Me</h2>
+    <p>Dedicated QA Engineer with hands-on experience in software testing, network automation, and Python scripting. Passionate about ensuring software reliability and efficiency through well-designed test strategies and tools.</p>
   </section>
- 
+
   <section id="skills">
-    <h2>Skills</h2>
+    <h2>🛠️ Skills</h2>
     <ul>
       <li>Manual & Automation Testing</li>
       <li>Java, Selenium WebDriver</li>
       <li>Python Scripting</li>
       <li>API Testing (Postman)</li>
-      <li>Git, Jenkins, Agile</li>
+      <li>Git, Jenkins, Agile Methodologies</li>
     </ul>
   </section>
- 
+
   <section id="projects">
-    <h2>Projects</h2>
+    <h2>📂 Projects</h2>
     <div class="project">
       <h3>Automation Testing Suite</h3>
-      <p>Developed a Selenium-based framework for automated regression testing of a banking application.</p>
+      <p>Designed and implemented a Selenium-based regression testing framework for a banking system, streamlining test execution and improving defect detection rates.</p>
     </div>
     <div class="project">
       <h3>API Test Automation</h3>
-      <p>Built automated API test cases using Python and Postman for RESTful services.</p>
+      <p>Created automated test workflows using Python and Postman for RESTful APIs, significantly reducing manual testing time and improving coverage.</p>
     </div>
   </section>
- 
+
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:kshitijramteke2002@gmail.com">kshitijramteke2002@gmail.com</a></p>
-    
-LinkedIn: linkedin.com/in/kshitijramteke</a></p>
+    <h2>📬 Contact</h2>
+    <div class="contact-links">
+      <p>Email: <a href="mailto:kshitijramteke2002@gmail.com">kshitijramteke2002@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/kshitijramteke" target="_blank">linkedin.com/in/kshitijramteke</a></p>
+    </div>
   </section>
- 
+
   <footer>
     <p>© 2025 Kshitij Ramteke</p>
   </footer>
- 
 </body>
 </html>
- 
